@@ -1,0 +1,47 @@
+/*combinatior selector*/
+div>h2 {color:rgb(27, 18, 155);
+    font-size:x-large;
+    font-family:'Times New Roman', Times, serif ;}
+.div0{text-align: right;background-color: antiquewhite;}
+.div1 {color:darkcyan;font-family: 'Arial Narrow', Arial, sans-serif;
+font-style:normal;
+font-weight: 100;
+}
+.div2 {color:rgb(9, 41, 11);
+font-family: 'Arial Narrow', Arial, sans-serif;
+font-style:normal;
+font-display:inherit;
+}
+.div3 {color:rgb(231, 91, 196);
+font-family: 'Arial Narrow', Arial, sans-serif;
+font-size-adjust:inherit;
+font-weight:100;
+}
+.div4 {color:rgb(83, 165, 219);
+font-family:'Arial Narrow', Arial, sans-serif;
+font-style:normal;
+font-weight: 100;
+}
+.div5 {color:rgb(243, 158, 47);
+font-family:'Arial Narrow', Arial, sans-serif;
+font-style:normal;
+font-weight: 100;
+}
+/*link,visit,hover,active selector*/
+a:link{color:green;}
+a:visited{color:rgb(231, 79, 41);}
+a:hover{color:maroon;}
+a:active{color:rgb(190, 190, 190);}
+/*marked
+input:in-range {
+border: 2px solid rgb(100, 235, 10);}
+*/
+
+p~ol{background-color: cornsilk; color:rgb(96, 30, 158);
+padding-outline: 2px;}
+nav>a {background-color: rgba(196, 52, 224, 0.3);}
+a:hover.highlight {
+      color: #ff0000;
+    font-size: 22px;}
+/*image border*/
+[title~="landscape"] {border:1px dashed rgb(142, 226, 58)}
