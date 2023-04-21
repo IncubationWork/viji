@@ -17,3 +17,4 @@ h5 {text-decoration:underline;
 text-decoration-color:rgb(77, 21, 133) ;}
 input:checked{color: darkgoldenrod;}
 input:invalid{border:2px solid red}
+input .marital{left-margin:30px;}
