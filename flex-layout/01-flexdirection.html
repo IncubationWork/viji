@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        /* basic code*/
+        .container{
+            border:5px solid black;
+            padding:10px;
+        }
+        .box:nth-of-type(odd){
+            background-color: teal;
+            color:white;
+        }
+        .box{
+            padding: 30px;
+            border: 5px solid red;
+            margin: 10px;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        /* flex box*/
+        .container{
+            display:flex;
+            /*
+              flex-direction:row;
+              flex-direction:row-reverse;
+              flex-direction:column;
+             */
+             flex-direction:column-reverse;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h2>Flex Direction</h2>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+    
+</body>
+</html>
