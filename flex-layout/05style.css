@@ -10,7 +10,7 @@
     height:100vh;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
-    grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows:  repeat(22 1fr);
     gap:1em;
     border:25px solid red ;
     border-radius: 3px;
