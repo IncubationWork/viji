@@ -7,7 +7,7 @@
 body{
     width:100vw;
     height:100vh;
-    
+    background-color: rgb(245, 244, 244);
 }
 header{
     width:100vw;
@@ -64,8 +64,8 @@ header{
     display: flex;
 
 }
-ul{
-    display:flex;
+.menu ul{
+    display:inline-flex;
     list-style-type: none;
     align-content: center;
     position:absolute;
@@ -75,14 +75,53 @@ ul{
     color:white;   
     
 }
-ul li{
+.menu ul li{
+    display:block;
     padding-left:18px;
     padding-right:13px;
 }
-ul li:hover{
+.menu ul li:hover{
     cursor:pointer;
     color:rgb(156, 153, 153);
 }
+.sub-menu-1{
+    display:none;
+}
+.menu ul li:hover .sub-menu-1{
+    display:block;
+    position:absolute; 
+    margin-top: -13px;
+    margin-left:-315px;
+}
+.menu ul li:hover .sub-menu-1 ul{
+    display:block;
+    margin:10px;
+    background-color: rgb(255, 255, 255);
+    color:black;
+    border:1px solid rgba(128, 128, 128, 0.37);
+    box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.15);
+}
+.menu ul li:hover .sub-menu-1 ul li{
+    width:150px;
+    padding:2px;
+    margin:5px;
+    border-radius: 0;
+    text-align: left;
+}
+.menu ul li:hover .sub-menu-1 ul li:hover{
+    background-color:rgba(0,0,0,0.042); 
+}
+.menu .sub-menu-1::before{
+    content:'';
+    position:absolute;
+    top:21px;
+    left:21em;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg);
+}
+
 form{
     display:flex;
     align-self: center;
@@ -125,6 +164,7 @@ form{
     outline: none;
     box-sizing: border-box;
     font-size: 13px;
+    /*border-radius: 2px;*/
     text-indent: 10px;
     padding-left:40px;
     position:relative;
@@ -171,5 +211,39 @@ form{
     border-radius: 100%;
     place-self: center;
     transform: scale(0.7);
-
+}
+nav{
+    display:flex;
+    width:100vw;
+    height:9.5vh;
+    background-color: white;
+    
+}
+.nav1 ul{
+    display:inline-flex;
+    align-items: center;
+    width:80vw;
+    height:5vh;
+    margin:auto;
+    position:absolute;
+    left:12em;
+    border-bottom:2px solid rgba(128, 128, 128, 0.357);
+    gap:20px;
+    
+    
+}
+.nav1 ul li{
+    display:block;
+    width: 80px;
+    padding: 15px;
+     
+      
+}
+.nav1 ul li a{
+    text-decoration: none;
+    color:black;
+}
+.active, .nav1 ul li:hover{
+    color:rgb(130, 126, 126);
+    border-bottom:4px solid rgb(55, 155, 242);
 }
