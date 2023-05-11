@@ -255,8 +255,8 @@ nav{
 .color{
     display:inline-flex;
     gap:3px;
-    position:absolute;
-    left:25%;
+    position:relative;
+    left:28%;
     
 }
 .color-picker1{
@@ -266,6 +266,9 @@ nav{
     border-radius: 3px;
     border:1px solid red;
     cursor:pointer;
+    position:relative;
+    display:inline-block;
+    cursor:pointer;
 }
 .color-picker2{
     width: 1.25em;
@@ -274,6 +277,8 @@ nav{
     border-radius: 3px;
     border:1px solid darkorange;
     cursor:pointer;
+    position:relative;
+    display:inline-block;
 }
 .color-picker3{
     width: 1.25em;
@@ -282,6 +287,8 @@ nav{
     border-radius: 3px;
     border:1px solid orange;
     cursor:pointer;
+    position:relative;
+    display:inline-block;
 }
 .color-picker4{
     width: 1.25em;
@@ -289,6 +296,8 @@ nav{
     background-color: pink;
     border:1px solid pink;
     cursor:pointer;
+    position:relative;
+    display:inline-block;
 }
 .color-picker5{
     width: 1.25em;
@@ -297,6 +306,8 @@ nav{
     border-radius: 3px;
     border:1px solid yellow;
     cursor:pointer;
+    position:relative;
+    display:inline-block;
 }
 .color-picker6{
     width: 1.25em;
@@ -305,6 +316,8 @@ nav{
     border-radius: 3px;
     border:1px solid yellow;
     cursor:pointer;
+    position:relative;
+    display:inline-block;
 }
 .color-picker7{
     width: 1.25em;
@@ -313,6 +326,8 @@ nav{
     border-radius: 3px;
     border:1px solid green;
     cursor:pointer;
+    position:relative;
+    display:inline-block;
 }
 .color-picker8{
     width: 1.25em;
@@ -321,6 +336,8 @@ nav{
     border-radius: 3px;
     border:1px solid darkgreen;
     cursor:pointer;
+    position:relative;
+    display:inline-block;
 }
 .color-picker9{
     width: 1.25em;
@@ -329,6 +346,8 @@ nav{
     border-radius: 3px;
     border:1px solid cyan;
     cursor:pointer;
+    position:relative;
+    display:inline-block;
 }
 .color-picker10{
     width: 1.25em;
@@ -337,6 +356,8 @@ nav{
     border-radius: 3px;
     border:1px solid blue;
     cursor:pointer;
+    position:relative;
+    display:inline-block;
 }
 .color-picker11{
     width: 1.25em;
@@ -345,6 +366,8 @@ nav{
     border-radius: 3px;
     border:1px solid violet;
     cursor:pointer;
+    position:relative;
+    display:inline-block;
 }
 .color-picker12{
     width: 1.25em;
@@ -353,6 +376,8 @@ nav{
     border-radius: 3px;
     border:1px solid pink;
     cursor:pointer;
+    position:relative;
+    display:inline-block;
 }
 .color-picker13{
     width: 1.25em;
@@ -361,6 +386,8 @@ nav{
     border-radius: 3px;
     border:1px solid grey;
     cursor:pointer;
+    position:relative;
+    display:inline-block;
 }
 .color-picker14{
     width: 1.25em;
@@ -369,6 +396,8 @@ nav{
     border-radius: 3px;
     border:1px solid grey;
     cursor:pointer;
+    position:relative;
+    display:inline-block;
 
 }
 .color-picker15{
@@ -378,12 +407,14 @@ nav{
     border-radius: 3px;
     border:1px solid black;
     cursor:pointer;
+    position:relative;
+    display:inline-block;
 }
 .pattern{
     display: inline-flex;
     gap:3px;
     position:relative;
-    right:-45em;
+    right:-30em;
     
 }
 .pattern1{
@@ -428,7 +459,7 @@ nav{
 }
 .advanced{
    position:relative;
-   right:-74em;
+   right:-61em;
    bottom:-0.1em;
     color:rgba(122, 120, 120, 0.797);
     font-size: 14px;;
@@ -442,28 +473,29 @@ nav{
     width: 21px;
     height: 19px;
     position:relative;
-    right:-65em;   
+    right:-54em;   
 }
 .color-picker1 .tooltiptext{
     visibility: hidden;
-    width:38px;
+    width:40px;
     background-color: white;
     color:grey;
     text-align: center;
     font-size: 12px;
     border-radius: 3px;
-    padding: 8px;
+    padding: 5px;
     position: absolute;
     z-index: 1;
     top: 140%;
     left: -2%;
     margin-left: -1px;
+    transition: opacity 0.3s;
     border:1px solid rgba(195, 193, 193, 0.736);
-    border-radius: 5px;
     box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
 }
 .color-picker1:hover .tooltiptext {
     visibility: visible;
+    opacity:1 
   }
   .color-picker1:hover .tooltiptext::before{
     content:'';
@@ -473,28 +505,31 @@ nav{
     width:15px;
     height: 15px;
     background:white;
-    transform: rotate(45deg);  
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index: -1;
 }
 .color-picker2 .tooltiptext{
     visibility: hidden;
-    width:60px;
+    width:40px;
     background-color: white;
     color:grey;
     text-align: center;
     font-size: 12px;
     border-radius: 3px;
-    padding: 10px;
+    padding: 5px;
     position: absolute;
     z-index: 1;
     top: 140%;
-    left: -5%;
+    left: -2%;
     margin-left: -1px;
+    transition: opacity 0.3s;
     border:1px solid rgba(195, 193, 193, 0.736);
-    border-radius: 5px;
     box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
 }
 .color-picker2:hover .tooltiptext {
     visibility: visible;
+    opacity:1 
   }
   .color-picker2:hover .tooltiptext::before{
     content:'';
@@ -504,236 +539,459 @@ nav{
     width:15px;
     height: 15px;
     background:white;
-    transform: rotate(45deg);
-    
-  
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index: -1;
 }
- /* .color-picker3 .tooltiptext{
+  .color-picker3 .tooltiptext{
     visibility: hidden;
-    width:50px;
+    width:40px;
     background-color: white;
     color:grey;
     text-align: center;
+    font-size: 12px;
     border-radius: 3px;
-    padding:1px 3px;
+    padding: 5px;
     position: absolute;
     z-index: 1;
-    top: 100%;
-    left: 50%;
-    margin-left: -25px;
+    top: 140%;
+    left: -2%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
 }
 .color-picker3:hover .tooltiptext {
     visibility: visible;
+    opacity:1 
   }
+  .color-picker3:hover .tooltiptext::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index: -1;
+}
   .color-picker4 .tooltiptext{
     visibility: hidden;
-    width:50px;
+    width:40px;
     background-color: white;
     color:grey;
     text-align: center;
+    font-size: 12px;
     border-radius: 3px;
-    padding:1px 3px;
+    padding: 5px;
     position: absolute;
     z-index: 1;
-    top: 100%;
-    left: 50%;
-    margin-left: -25px;
+    top: 140%;
+    left: -2%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
 }
 .color-picker4:hover .tooltiptext {
     visibility: visible;
+    opacity:1 
   }
+  .color-picker4:hover .tooltiptext::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index: -1;
+}
   .color-picker5 .tooltiptext{
     visibility: hidden;
-    width:50px;
+    width:40px;
     background-color: white;
     color:grey;
     text-align: center;
+    font-size: 12px;
     border-radius: 3px;
-    padding:1px 3px;
+    padding: 5px;
     position: absolute;
     z-index: 1;
-    top: 100%;
-    left: 50%;
-    margin-left: -25px;
+    top: 140%;
+    left: -2%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
 }
 .color-picker5:hover .tooltiptext {
     visibility: visible;
+    opacity:1 
   }
+  .color-picker5:hover .tooltiptext::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index: -1;
+}
   .color-picker6 .tooltiptext{
     visibility: hidden;
-    width:50px;
+    width:40px;
     background-color: white;
     color:grey;
     text-align: center;
+    font-size: 12px;
     border-radius: 3px;
-    padding:1px 3px;
+    padding: 5px;
     position: absolute;
     z-index: 1;
-    top: 100%;
-    left: 50%;
-    margin-left: -25px;
+    top: 140%;
+    left: -2%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
 }
 .color-picker6:hover .tooltiptext {
     visibility: visible;
+    opacity:1 
   }
+  .color-picker6:hover .tooltiptext::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index: -1;
+}
   .color-picker7 .tooltiptext{
     visibility: hidden;
-    width:50px;
+    width:40px;
     background-color: white;
     color:grey;
     text-align: center;
+    font-size: 12px;
     border-radius: 3px;
-    padding:1px 3px;
+    padding: 5px;
     position: absolute;
     z-index: 1;
-    top: 100%;
-    left: 50%;
-    margin-left: -25px;
+    top: 140%;
+    left: -2%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
 }
 .color-picker7:hover .tooltiptext {
     visibility: visible;
+    opacity:1 
   }
+  .color-picker7:hover .tooltiptext::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index: -1;
+}
   .color-picker8 .tooltiptext{
     visibility: hidden;
-    width:50px;
+    width:40px;
     background-color: white;
     color:grey;
     text-align: center;
+    font-size: 12px;
     border-radius: 3px;
-    padding:1px 3px;
+    padding: 5px;
     position: absolute;
     z-index: 1;
-    top: 100%;
-    left: 50%;
-    margin-left: -25px;
+    top: 140%;
+    left: -2%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
 }
 .color-picker8:hover .tooltiptext {
     visibility: visible;
+    opacity:1 
   }
+  .color-picker8:hover .tooltiptext::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index: -1;
+}
   .color-picker9 .tooltiptext{
     visibility: hidden;
-    width:50px;
+    width:40px;
     background-color: white;
     color:grey;
     text-align: center;
+    font-size: 12px;
     border-radius: 3px;
-    padding:1px 3px;
+    padding: 5px;
     position: absolute;
     z-index: 1;
-    top: 100%;
-    left: 50%;
-    margin-left: -25px;
+    top: 140%;
+    left: -2%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
 }
 .color-picker9:hover .tooltiptext {
     visibility: visible;
+    opacity:1 
   }
+  .color-picker9:hover .tooltiptext::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index: -1;
+}
   .color-picker10 .tooltiptext{
     visibility: hidden;
-    width:50px;
+    width:40px;
     background-color: white;
     color:grey;
     text-align: center;
+    font-size: 12px;
     border-radius: 3px;
-    padding:1px 3px;
+    padding: 5px;
     position: absolute;
     z-index: 1;
-    top: 100%;
-    left: 50%;
-    margin-left: -25px;
+    top: 140%;
+    left: -2%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
 }
 .color-picker10:hover .tooltiptext {
     visibility: visible;
+    opacity:1 
   }
+  .color-picker10:hover .tooltiptext::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index: -1;
+}
 
   .color-picker11 .tooltiptext{
     visibility: hidden;
-    width:50px;
+    width:40px;
     background-color: white;
     color:grey;
     text-align: center;
+    font-size: 12px;
     border-radius: 3px;
-    padding:1px 3px;
+    padding: 5px;
     position: absolute;
     z-index: 1;
-    top: 100%;
-    left: 50%;
-    margin-left: -25px;
+    top: 140%;
+    left: -2%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
 }
 .color-picker11:hover .tooltiptext {
     visibility: visible;
-  }.color-picker12 .tooltiptext{
+    opacity:1 
+  }
+  .color-picker11:hover .tooltiptext::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index: -1;
+}
+  .color-picker12 .tooltiptext{
     visibility: hidden;
-    width:50px;
+    width:40px;
     background-color: white;
     color:grey;
     text-align: center;
+    font-size: 12px;
     border-radius: 3px;
-    padding:1px 3px;
+    padding: 5px;
     position: absolute;
     z-index: 1;
-    top: 100%;
-    left: 50%;
-    margin-left: -25px;
+    top: 140%;
+    left: -2%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
 }
 .color-picker12:hover .tooltiptext {
     visibility: visible;
+    opacity:1 
   }
+  .color-picker12:hover .tooltiptext::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index: -1;
+}
   .color-picker13 .tooltiptext{
     visibility: hidden;
-    width:50px;
+    width:40px;
     background-color: white;
     color:grey;
     text-align: center;
+    font-size: 12px;
     border-radius: 3px;
-    padding:1px 3px;
+    padding: 5px;
     position: absolute;
     z-index: 1;
-    top: 100%;
-    left: 50%;
-    margin-left: -25px;
+    top: 140%;
+    left: -2%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
 }
 .color-picker13:hover .tooltiptext {
     visibility: visible;
+    opacity:1 
   }
+  .color-picker13:hover .tooltiptext::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index: -1;
+}
   .color-picker14 .tooltiptext{
     visibility: hidden;
-    width:50px;
+    width:40px;
     background-color: white;
     color:grey;
     text-align: center;
+    font-size: 12px;
     border-radius: 3px;
-    padding:1px 3px;
+    padding: 5px;
     position: absolute;
     z-index: 1;
-    top: 100%;
-    left: 50%;
-    margin-left: -25px;
+    top: 140%;
+    left: -2%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
 }
 .color-picker14:hover .tooltiptext {
     visibility: visible;
+    opacity:1 
   }
+  .color-picker14:hover .tooltiptext::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index: -1;
+}
   .color-picker15 .tooltiptext{
     visibility: hidden;
-    width:50px;
+    width:40px;
     background-color: white;
     color:grey;
     text-align: center;
+    font-size: 12px;
     border-radius: 3px;
-    padding:1px 3px;
+    padding: 5px;
     position: absolute;
     z-index: 1;
-    top: 100%;
-    left: 50%;
-    margin-left: -25px;
+    top: 140%;
+    left: -2%;
+    margin-left: -1px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
 }
 .color-picker15:hover .tooltiptext {
     visibility: visible;
+    opacity:1 
   }
+  .color-picker15:hover .tooltiptext::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index: -1;
+}
   .pattern1 .tooltiptext{
     visibility: hidden;
     width:50px;
     background-color: white;
     color:grey;
+    font-size:12px;
     text-align: center;
     border-radius: 3px;
     padding:1px 3px;
@@ -742,14 +1000,32 @@ nav{
     top: 100%;
     left: 50%;
     margin-left: -25px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
 }
 .pattern1:hover .tooltiptext {
     visibility: visible;
-  }.pattern2 .tooltiptext{
+    opacity:1;
+  }
+  .pattern1:hover .tooltiptext::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index: -1;
+}
+  .pattern2 .tooltiptext{
     visibility: hidden;
     width:50px;
     background-color: white;
     color:grey;
+    font-size:12px;
     text-align: center;
     border-radius: 3px;
     padding:1px 3px;
@@ -758,14 +1034,32 @@ nav{
     top: 100%;
     left: 50%;
     margin-left: -25px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
 }
 .pattern2:hover .tooltiptext {
     visibility: visible;
-  }.pattern3 .tooltiptext{
+    opacity:1;
+  }
+  .pattern2:hover .tooltiptext::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index: -1;
+}
+.pattern3 .tooltiptext{
     visibility: hidden;
     width:50px;
     background-color: white;
     color:grey;
+    font-size:12px;
     text-align: center;
     border-radius: 3px;
     padding:1px 3px;
@@ -774,14 +1068,32 @@ nav{
     top: 100%;
     left: 50%;
     margin-left: -25px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
 }
 .pattern3:hover .tooltiptext {
     visibility: visible;
-  }.pattern4 .tooltiptext{
+    opacity:1;
+  }
+  .pattern3:hover .tooltiptext::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index: -1;
+}
+.pattern4 .tooltiptext{
     visibility: hidden;
     width:50px;
     background-color: white;
     color:grey;
+    font-size:12px;
     text-align: center;
     border-radius: 3px;
     padding:1px 3px;
@@ -790,16 +1102,33 @@ nav{
     top: 100%;
     left: 50%;
     margin-left: -25px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
 }
 .pattern4:hover .tooltiptext {
     visibility: visible;
+    opacity:1;
   }
+  .pattern4:hover .tooltiptext::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index: -1;
+}
 .setting .tooltiptext{
     visibility: hidden;
     width:50px;
     background-color: white;
     color:grey;
     text-align: center;
+    font-size:12px;
     border-radius: 3px;
     padding:1px 3px;
     position: absolute;
@@ -807,10 +1136,26 @@ nav{
     top: 100%;
     left: 50%;
     margin-left: -25px;
+    transition: opacity 0.3s;
+    border:1px solid rgba(195, 193, 193, 0.736);
+    box-shadow: 1px 1px 1px 1px rgba(197, 195, 195, 0.34);
 }
 .setting:hover .tooltiptext {
     visibility: visible;
-  }*/
+    opacity:1;
+  }
+  .setting:hover .tooltiptext::before{
+    content:'';
+    position:absolute;
+    top:-5px;
+    left:15%;
+    width:15px;
+    height: 15px;
+    background:white;
+    transform: rotate(45deg); 
+    border:1px solid transparent;
+    z-index: -1;
+}
 
   menu{
     display:grid;
@@ -879,14 +1224,17 @@ nav{
     position:relative;
     right:-200px;
 }
-.share{
-    width:50%;
-    
+.share-img{
+    width:30%;
     background-image: url(spriteimage.png);
     background-position: -496px -442px; 
     width: 24px;
     height: 21px;
 
+}
+.share{
+    font-size: small;
+    place-self: center;
 }
 .relevant{
     display:flex;
@@ -930,32 +1278,88 @@ nav{
     grid-template-rows: 2.5fr 4fr 2fr 1.5fr;
     gap:20px;
     margin-top:40px;
-    margin-left:40px;
     box-sizing: border-box;
   }
-  .as{
+  aside{
     box-sizing: border-box;
   }
-  .aside1{
+  .sidebar1{
     grid-row:1/2;
     grid-column:1/2;
     background-color: white;
-    padding:20px;
-    display:grid;
-    grid-template-columns:  ;
-    grid-template-rows: repeat(1fr);
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 60px;
+    
+    width:100%;
+    margin-bottom: 20px;
+    
   }
-  .li{
-
-
+  h4{
+    display:block;
+    padding-top:20px;
+    padding-bottom: 30px;
+    margin-left: 2px;
   }
-  .aside2{
+  .list{
+    background-color: rgb(210, 209, 209);
+    border:none;
+    border-radius:5px;
+    float:left;
+    margin: 0 5px 5px 0;
+    max-width: 96%;
+    padding:5px;
+    position: relative;
+    transition: all .15s ease-in-out;
+    
+  }
+  .list:hover{
+    background-color:rgb(168, 165, 165) ;
+    color:white;
+    cursor:pointer;
+  }
+
+  .sidebar2{
     grid-row:2/3;
     grid-column:1/2;
     background-color: white; 
   }
-  .aside3{
+
+  .sidebar3{
     grid-row:4/5;
     grid-column:1/2;
     background-color: white;
+    display:inline-flex;
+    max-height:150px;
+    font-size: 13px;
+    color:rgb(167, 162, 162);
   }
+.sidebar3 ul {
+    list-style: none;
+    
+}
+.sidebar3 ul li a{
+    text-decoration: none;
+    color:rgb(167, 162, 162);
+   
+}
+ul li:hover{
+    text-decoration: underline;
+    
+    
+}.lang:hover{
+    text-decoration: underline;
+
+
+}
+.lang-img{
+    background-image: url(spriteimage.png);
+    background-position: -524px -85px; 
+    width: 15px;
+    height: 8px;
+}
+
