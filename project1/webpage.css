@@ -139,15 +139,15 @@ form{
     outline: none;
     box-sizing: border-box;
     background-image: url(spriteimage.png);
-    background-position: -314px -232px; 
-    width: 23px;
-    height: 21px;
-    opacity: rgba(0, 0, 0, 0.121);
+    background-position: -312px -192px; 
+    width: 22px;
+    height: 19px;
+    opacity: 0.6;
     cursor: pointer;
-    transform: scale(1.5);
+    transform: scale(1);
     place-self: center;
     position:absolute;
-    left:7px;
+    left:3%;
     z-index:1;
     
 
@@ -276,6 +276,7 @@ nav{
 .nav1 ul li{
     display:block;
     width: 80px;
+    height: 47px;
     padding: 15px;    
 }
 .nav1 ul li a{
@@ -284,22 +285,24 @@ nav{
 }
 .active, .nav1 ul li:hover{
     text-decoration: none;
-    border-bottom:4px solid rgb(55, 155, 242);
+    border-bottom:3px solid rgb(55, 155, 242);
 }
 .nav2{
     display:flex;
-    width:80vw;
-    height:4.5vh;
-    margin:auto;
+    width:80%;
+    height:41px;
+    margin:  auto;
     position:relative;
     top:35px;
     right:-3em;
 }
 .color{
-    display:inline-flex;
-    gap:3px;
-    position:relative;
-    left:28%;
+    display:flex;
+    gap:4px;
+    width: 56.1%;
+    height: 20px;
+    justify-content: flex-end;
+    position: relative;
     
 }
 .color-picker1{
@@ -454,10 +457,13 @@ nav{
     display:inline-block;
 }
 .pattern{
-    display: inline-flex;
+    display:flex;
     gap:3px;
-    position:relative;
-    right:-30em;
+    align-items: center;
+    width: 25%;
+    height: 20px;
+    margin-left:2.6%;
+    position: relative;
     
 }
 .pattern1{
@@ -501,11 +507,12 @@ nav{
     cursor:pointer;
 }
 .advanced{
-    position:relative;
-    right:-61em;
-    bottom:-0.1em;
+    display: flex;
     color:rgba(122, 120, 120, 0.797);
-    font-size: 14px;;
+    font-size: 14px;
+    width: 15%;
+    gap:5px;
+    justify-content: flex-end;
     
 }
 .advanced:hover{
@@ -535,14 +542,13 @@ nav{
     opacity:1 
 }
 .setting{
-    width:2em;
+     width:2%;
     height:1.5em;
     background-image: url(spriteimage.png);
     background-position: -405px -316px; 
     width: 21px;
     height: 19px;
-    position:relative;
-    right:-54em;   
+    
 }
 .setting .tooltiptext{
     visibility: hidden;
@@ -1239,10 +1245,8 @@ nav{
     height:100vh;
     grid-template-columns: 80% 20%;
     position:relative;
-    top:140px;
-    
+    top:140px; 
   }
-  
   .container1{
     display:grid;
     width:100%;
