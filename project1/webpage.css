@@ -512,8 +512,8 @@ nav{
     font-size: 14px;
     width: 15%;
     gap:5px;
-    justify-content: flex-end;
-    
+    position:relative;
+    right: -8%;    
 }
 .advanced:hover{
     cursor: pointer;
@@ -548,7 +548,8 @@ nav{
     background-position: -405px -316px; 
     width: 21px;
     height: 19px;
-    
+    position:relative;
+    right: 2.5%; 
 }
 .setting .tooltiptext{
     visibility: hidden;
@@ -1886,8 +1887,13 @@ nav{
     border-radius:100%;
   }
   input{
-    color:blue;
-    border:2px solid blue;
+    color:#128fdc;
+    border:2px solid #128fdc;
+    background-color: transparent;
+  }
+  input:hover{
+    background-color: #128fdc;
+    color:white;
   }
   .join{
     font-size: 20px;
