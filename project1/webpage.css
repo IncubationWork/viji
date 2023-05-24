@@ -165,14 +165,7 @@ header{
     position:relative;
     left:5%;
 }
-#search-icon:focus{
-    width:100px;
-    
-    outline:none; 
-    background-color: transparent;
-    transition-duration: 0.4s;
-    float:right;
-}
+
 #search-box{
     width:220px;
     height:33px;
@@ -186,6 +179,15 @@ header{
     text-indent: 10px;
     padding-left:40px;
     
+}
+#search-icon:focus~#search-box{
+    width:350px;
+    outline:none; 
+    background-color: #fff;
+    transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
 }
 #search-box:focus{
     width:350px;
@@ -803,7 +805,7 @@ main .left-content{
     justify-content: space-between;
     align-items: center;
 }
-.img2-con, .img3-con, .img4-con{
+.img2-con{
     width: 100%;
     height:200px;
 }
@@ -885,6 +887,10 @@ main .left-content{
     height: 50px;
     justify-content: space-between;
     align-items: center;
+}
+.img3-con{
+    width: 100%;
+    height:200px;
 }
 .img3-con .img3-list{
     display: flex;
@@ -1002,18 +1008,17 @@ main .left-content{
 }
 .img4-con .img4-list{
     display:flex;
-    flex-wrap: wrap;
+    max-width: 1200px;
     width: 100%;
-   
+    flex-wrap: wrap;
     gap:5px;
-    object-fit: cover;
+    
 }
 .img4-con .img4-list img{
     min-width: 20%;
     height: 200px;
+    flex-grow:1;
     object-fit:cover;
-    flex: 1 1 25%;
-    flex-wrap: wrap;
     
 }
 main .right-content{
