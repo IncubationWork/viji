@@ -9,12 +9,13 @@
     width: 100%;
     height: 100vh;
     border:1px solid #ccc;
-    overflow: auto;
+    overflow-x: hidden;
 }
 body{
     width: 100vw;
     height: 100vh;
     background-color: #f3f5f6;
+    
    
 }
 #flickr-base{
