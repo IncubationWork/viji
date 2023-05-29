@@ -28,7 +28,7 @@ body{
     top:0;
     left:0;
     right:0;
-    z-index:99;
+    z-index:6;
 }
 header{
     background-color: rgb(31, 31, 31);   
@@ -132,7 +132,7 @@ header{
 #search-box{
     width:220px;
     height:33px;
-    background-color:rgba(255, 255, 255, 0.848);
+    background-color:rgba(255, 255, 255, 0);
     color:black;
     border:none;
     outline: none;
@@ -217,7 +217,7 @@ header{
     transform: rotate(45deg); 
     border-top:1px solid rgba(188, 187, 187, 0.463);
     border-left:1px solid rgba(188, 187, 187, 0.463);
-    z-index: -1;
+    z-index: 1;
 }
 .notify_icon{
     background-image: url(spriteimage.png);
@@ -380,7 +380,7 @@ nav{
     transform: rotate(45deg); 
     border-top:1px solid rgba(188, 187, 187, 0.463);
     border-left:1px solid rgba(188, 187, 187, 0.463);
-    z-index: -1;
+    z-index: 1;
 }
 #pattern{
     display:flex;
@@ -472,7 +472,7 @@ main{
 main .left-content{
     width: 77%;
     height: 100%;
-    z-index: 50;
+ 
   }
   .tool_head{
     height: 50px;
@@ -1127,19 +1127,20 @@ main{
    
 }
 .img2-head, .img3-head, .img4-head{
-    padding-right:50px
+    padding-right:30%;
     }
     #search{
         display:flex;
-        width: 75%;
+        width: 95%;
+        justify-content: center;
         align-items: center;
+        z-index: 1;
         position: absolute;
-        left:5%;
-        z-index: 2;
-        justify-content: right;
+        right: -3px;
+        
     }
     #search-icon{
-        background-color:rgba(11, 11, 11, 0.456);
+        background-color:rgb(11, 11, 11);
         border:none;
         outline: none;
         box-sizing: border-box;
@@ -1149,11 +1150,13 @@ main{
         height: 22px;
         cursor: pointer;
         transform: scale(1);
-        place-self: center;
+        position: relative;
+        left:30px;   
+        z-index: 1;
         }
     
     #search-box{
-        width: 5px;
+        width: 5%;
         height:33px;
         background-color:transparent;
         color:black;
@@ -1164,13 +1167,15 @@ main{
         border-radius: 2px;
         text-indent: 10px;
         padding-left:40px;
+        z-index: 0;
         
     }
     #search-box:focus{
         display: none;
     }
     #search-icon:focus~#search-box{
-        width:500px;
+        
+        width:430px;
         outline:none; 
         background-color: rgb(16, 15, 15);
         transition-duration: 0.4s;
@@ -1192,18 +1197,18 @@ main{
         height: 15px;
         position: relative;
         background-color: #0e100e6b;
-        right:15px;
-        z-index: 200;
+        right: 5%;
+        z-index: 1;
         border: none;
         cursor: pointer;
         }
     .right_tool{
         position: relative;
-        right: 50px;
+        right: 25%;
     }
 #profile{
     width: 100px;
     position: absolute;
-    left:80%;
+    left:75%;
 }
 }
