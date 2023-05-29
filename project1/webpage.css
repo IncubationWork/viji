@@ -1127,7 +1127,7 @@ main{
    
 }
 .img2-head, .img3-head, .img4-head{
-    padding-right:30%;
+    padding-right:32%;
     }
     #search{
         display:flex;
@@ -1204,7 +1204,7 @@ main{
         }
     .right_tool{
         position: relative;
-        right: 25%;
+        right: 32%;
     }
 #profile{
     width: 100px;
