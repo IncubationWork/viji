@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Poppins:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif ;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(images/happynewyear.jpeg);
+    background-size: cover;
+    background-position: center;
+    color:white;
+}
+p{
+    font-size: 14px;
+}
+h2{
+    font-family: "Inspiration";
+    font-size: 70px;
+    font-weight: 400;
+}
+#count{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+.box h3{
+    font-size: 20px;
+}
+small{
+    font-size: 10px;
+}
+@media (min-width:686px){
+    h2{
+        font-size: 100px;
+    }
+    p{
+        font-size: 17px;
+    }
+    .box{
+        width: 80px;
+        height: 60px;
+        text-align: center;
+    }
+    .box h3{
+        font-size: 23px;
+    }
+    small{
+        font-size: 13px;
+    }
+}
+
+@media (min-width:982px){
+    
+    h2{
+        font-size: 150px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .box{
+        width: 100px;
+        height: 70px;
+        text-align: center;
+    }
+    .box h3{
+        font-size: 25px;
+    }
+    small{
+        font-size: 18px;
+    }
+}
