@@ -1,24 +1,47 @@
 body{
-    width: 400px;
-      margin: 0 auto;
-      padding-top:5%;
-  }
+  width: 50%;
+  margin: 0 auto;
+     padding-top:5%;
+     }
   .container{
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
     box-shadow:0 2px 8px rgba(185, 135, 238, 0.26);
     text-align: center;
+    background-color: rgb(195, 223, 248);
 
+  }
+  p{
+    font-size: 18px;
   }
   h1{
     background-color: rgba(83, 14, 83, 0.553);
     color:white;
   }
   input{
-    border: 2px solid purple;
+    width: 200px;
+    height: 30px;
     background-color: white;
-    
+    box-shadow:0 8px 8px rgba(137, 92, 194, 0.26);
+    border: none;
+    outline: none;
   }
-  button{
+  .btn_cont{
+   
+    display: flex;
+    justify-content: space-around;
+  }
+  button, #clearbutton{
+    width: 100px;
+    height: 60px;
     background-color: rgba(154, 111, 241, 0.488);
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    box-shadow:0 2px 8px rgb(0 0 0 / 26%);
+    cursor: pointer;
+
   }
+  

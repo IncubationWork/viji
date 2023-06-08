@@ -6,7 +6,7 @@
         const number=parseInt(userInput.value);
         
         const result=document.getElementById("result");
-        result.innerHTML="";  
+        result.innerHTML="Even Numbers: ", result;  
         if (+userInput.value<=1 || userInput.value===""){
           alert("Please enter the valid input")}
         
