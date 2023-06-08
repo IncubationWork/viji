@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voter Eligibility Check</title>
+    <title>Voter Eligibility Checker</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Voter Eligibility Check</h1>
     <div class="container">
-    <div class="eligibilityContainer">
-        <lable>What is your age?</lable>
-        <input type="number" id="age" min="0" placeholder="enter your age">   
-        <button id="checkbutton">Check Eligibility</button>
+    <h1>Voter Eligibility Checker</h1>
+   
+    <label for="ageinputbox">What is your age?</label><input type="number" id="age" name="age" min="0" placeholder="Enter your age">
+    <div id="button">
+    <input type="button" id="checkbutton" value="Check Eligibility">
+    <input type="button" id="clearbutton" value="reset">
     </div>
     <div id="resultbutton"></div>
-</div>
-<script src="script.js"></script>
+    </div>
+   
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-*{
+/**{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -62,4 +62,53 @@ input{
 .red{
     background-color: red;
     color:white;
+}
+*/
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+    box-sizing: border-box;
+}
+.container{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+    border-radius: 8px;
+    border:2px solid rgba(128, 128, 128, 0.521);
+    box-shadow:0 2px 8px rgb(0 0 0 / 26%);
+    padding: 5px;  
+}
+h1{
+    background-color: rgba(229, 201, 132, 0.697);
+}
+label{
+
+    font-size: 20px;
+}
+input{
+    height: 30px;
+    font-size: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.539);
+}
+#checkbutton, #clearbutton{
+    font-size: 15px;
+    background-color: rgba(229, 201, 132, 0.626);
+    box-shadow:0 2px 8px rgb(0 0 0 / 26%);
+    
+}
+.green{
+    background-color: green;
+    color:white;
+    font-size: 13px;
+}
+.red{
+    background-color: red;
+    color:white;
+    font-size: 13px;
 }

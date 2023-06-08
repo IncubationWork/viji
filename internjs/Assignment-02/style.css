@@ -1,0 +1,29 @@
+
+    body{
+      width: 400px;
+      text-align: center;
+      margin: 10% auto;
+      font-family: sans-serif;
+      border:2px solid rgba(120, 118, 118, 0.503);
+      box-shadow:0 2px 8px rgb(0 0 0 / 26%);
+    }
+    label{
+        font-size: 20px;
+    }
+    .btn_container{
+      margin-top: 10px;
+    }
+    #number{
+      margin-top: 10px;
+      font-size: 20px;
+      border:2px solid brown;
+    }
+    button, #clearbutton{
+      width: 80px;
+      align-self: center;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: rgba(246, 135, 75, 0.633);
+      font-weight: bold;
+    }
+  

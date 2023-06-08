@@ -1,11 +1,16 @@
 const checkButton=document.getElementById("checkbutton");
+const clearButton=document.getElementById("clearbutton");
 const resultButton=document.getElementById("resultbutton");
+const userInput = document.getElementById('age');
 
 checkButton.addEventListener('click',function(){
-  const ageInput=document.getElementById('age');
-  const age=parseInt(ageInput.value);
+  const ageInput=userInput.value;
+  
 
-  if(age>=18){
+  if (ageInput==="" || +ageInput<=0){
+    alert("please input a valid age");
+  }
+  else if(+ageInput>=18){
     resultButton.innerHTML='<button class="button green">Eligible</button>';
   }else{
     resultButton.innerHTML='<button class="button red">Not Eligible</button>';
@@ -13,3 +18,9 @@ checkButton.addEventListener('click',function(){
 });
 
 
+const clearOp = () => {
+  userInput.value = ''; 
+  resultButton.innerHTML='';
+}
+
+clearButton.addEventListener('click', clearOp);

@@ -5,32 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sum of the Number</title>
-    <style>
-        body{
-            text-align: center;
-            padding-top:5%;
-        }
-    </style>
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
     <h1>Sum of the Number</h1>
-    <p>Enter the Number: <input id="inputNumber"></p>
+    <p>Enter the Number: <input type="number" id="inputNumber"></p>
 <button onClick= "sumOfDigits()">Sum of digits</button>
-<p>Sum = <input id="sum"></p>
-    <script>
-        function sumOfDigits()
-{
-  var n, remainder, sum = 0;
-  n = parseInt(document.getElementById("inputNumber").value);
-  while(n)
-  {
-    remainder = n % 10;
-    sum = sum + remainder;
-    n = Math.floor(n/10);
-  }
-  document.getElementById("sum").value = sum;
-}
-        
-    </script>
+<p>Sum = <input  id="sum"></p>
+<input type="button" id="clearbutton" value="clear" style="background-color: rgba(154, 111, 241, 0.488);">
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
