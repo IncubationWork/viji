@@ -16,7 +16,7 @@ function squareNumbers() {
     
     });
 }
-    outputElement.textContent = squaredNumbers.join(', ');
+    outputElement.textContent = "Result: "+ squaredNumbers.join(', ');
   }
   const clearOp = () => {
     inputElement.value = ''; 

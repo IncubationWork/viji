@@ -1,6 +1,5 @@
 const userInput=document.getElementById('inputNumber');
         const clearButton=document.getElementById('clearbutton');
-        const sum=document.getElementById('sum');
         function sumOfDigits(){ 
         const inputNumber=document.getElementById('userInput')
         var n, remainder, sum = 0;
@@ -14,11 +13,11 @@ const userInput=document.getElementById('inputNumber');
     sum = sum + remainder;
     n = Math.floor(n/10);
   }
-  document.getElementById("sum").value = sum;
+  document.getElementById("sum").innerHTML = sum;
 }
 }
 const clearOp = () => {
         userInput.value = '';
-        sum.value='';
+        sum.innerHTML='';
       }
       clearButton.addEventListener('click',clearOp); 

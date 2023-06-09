@@ -1,7 +1,9 @@
 body{
-  width: 50%;
-  margin: 0 auto;
-     padding-top:5%;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
      }
   .container{
     width: 500px;
@@ -35,13 +37,22 @@ body{
   }
   button, #clearbutton{
     width: 100px;
-    height: 60px;
+    height: 62px;
     background-color: rgba(154, 111, 241, 0.488);
     font-size: 16px;
     border: none;
     border-radius: 15px;
     box-shadow:0 2px 8px rgb(0 0 0 / 26%);
     cursor: pointer;
+
+  }
+  #sum{
+    width: 220px;
+    height: 32px;
+    background-color: white;
+    margin:0 auto;
+    box-shadow:0 8px 8px rgba(137, 92, 194, 0.26);
+    font-size: 15px;
 
   }
   

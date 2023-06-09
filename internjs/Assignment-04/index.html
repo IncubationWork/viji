@@ -2,12 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products Filter by Price</title>
+    <title>Filter by Price</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <header>
+            <div class="icon">
+            <div id="menu_icon"></div>
+            </div>
+            <div class="shop">
+            <div id="shop_name">Tula Botique</div>
+            <div id="shopname">Tula Botique</div>
+</div>
+<form class="filter">
+    <div class="item">
+        <label for="">Category</label>
+        <select name="category">
+            <option value="">---</option>
+            <option value="T-shirt">T-shirt</option>
+            <option value="saree">Saree</option>
+            <option value="frock">Frock</option>
+        </select>
+    </div>
+    <div class="item">
+        <label for="">Color</label>
+        <select name="color">
+            <option value="">---</option>
+            <option value="white">white</option>
+            <option value="black">black</option>
+            <option value="grey">grey</option>
+            <option value="blue">blue</option>
+        </select>
+    </div>
+    <div class="item">
+        <label for="">Name</label>
+        <input type="text" name="name">
+    </div>
+    <div class="item">
+        <label for="">Min Price</label>
+        <input type="number" name="minPrice">
+    </div>
+    <div class="item">
+        <label for="">Max Price</label>
+        <input type="number" name="maxPrice">
+    </div>
+    <div class="item submit">
+        <button>Search</button>
+    </div>
+</form>
+            
+            <div id="cart"></div>
+        </header>
+        <main>
+            <div class="countResults">
+                Found <b id="count">5 </b>results
+            </div>
+            <div id="list">
+        </main>
+
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
+
