@@ -55,4 +55,10 @@ body{
     font-size: 15px;
 
   }
+  @media (max-width:525px) {
+    
+  }
+  .container{
+    width: 400px;
+  }
   

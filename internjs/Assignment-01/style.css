@@ -70,3 +70,14 @@ input{
     color:white;
     
 }
+@media (max-width:525px) {
+    body{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .container{
+        width: 400px;
+        margin: 0 auto;
+    }
+}

@@ -7,7 +7,8 @@
       body{
           width: 100vw;
           height: 100vh;
-          background-image:linear-gradient(to bottom right, rgba(252, 203, 211, 0.355), rgba(151, 36, 151, 0.515));
+          overflow-x: hidden;
+          background-color:rgba(128, 0, 128, 0.305);
       }
       .container{
           width: 100%;
@@ -82,12 +83,21 @@
           display: block;
           width: 40%;
       }
-      .filter .item .submit button{
-          background-color: #aa82ed;
-          color:#fff;
+      .filter .submit button{
+          background-color: #a982ed96;
           cursor: pointer;
+          font:18px bold;
+      }
+      main{
+        width:80%;
+        height: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: 100px 1fr;
+
       }
       .countResults{
+         width: 100%;
           font-size: xx-large;
           text-align: center;
           padding: 20px;
@@ -96,15 +106,17 @@
           padding: 20px;
           display: grid;
           column-gap: 1%;
-          grid-template-columns: 32.66% 32.6% 32.66%;
+          grid-template-columns: 25% 25% 25% 25%;
           row-gap:10px;
       }
       #list .item img{
-          width: 90%;
-          height: 500px;
-          object-fit: cover;
+          width: 100%;
+          height: 300px;
+          object-fit:contain;
           transform: scale(.8);
           border-radius: 10px;
+          cursor: pointer;
+          background-color: transparent;
       }
       #list .item{
           background-color: #fff5;
@@ -120,7 +132,9 @@
          letter-spacing: 1px;
          padding: 20px;  
       }
-      
+      #search{
+        display: none;
+      }
       #cart{
           width: 15%;
           height:50px;
@@ -129,132 +143,134 @@
           background-size: contain;
           background-repeat: no-repeat;
           transform: scale(0.7);
+          cursor: pointer;
       
       }
-      main{
-        width:80%;
-        margin: 0 auto;
+      #cart:hover{
+        opacity: 0.6;
+      }
+      
+@media  (max-width: 525px){
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+   form{
+        position: absolute;
+        top:100px;
+        width: 500px;
+        height: 100px;
 
-      }
-      @media (max-width:525px){
-          @import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Nunito+Sans:wght@300&family=Playfair:ital,wght@1,500&family=Poppins:wght@300;400;700&display=swap');
-      *{
-          margin:0;
-          padding:0;
-          box-sizing: border-box;
-      }
-      body{
-          width: 100vw;
-          height: 100vh;
-          background-image:linear-gradient(to bottom right, rgba(252, 203, 211, 0.355), rgba(151, 36, 151, 0.515));
-      }
-      .container{
-          width: 100%;
-          height: 100%;
-          display: grid;
-          grid-template-rows: 100px 1fr;
-      }
-      header{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background-color: rgb(159, 150, 244); 
-      }
-      .icon{
-          visibility: visible;
-          width: 10%;
-          height: 30%;
-          display: flex;
-          align-items: center;
-          cursor: pointer;
-      }
-      #menu_icon{
-          width: 18px;
-          height: 3px;
-          background-color:white;
-          position:absolute;
-          cursor: pointer;
-          left:20px;
-      }
-      #menu_icon::before{
-          content:"";
-          width:18px;
-          height: 3px;
-          background-color: white;
-          position: absolute;
-          top: -8px;
-      }
-          #menu_icon::after{
-              content:"";
-              width:18px;
-              height: 3px;
-              background-color: white;
-              position: absolute;
-              top: 8px;
-          }
-          .shop{
-              width: 60%;
-              height: 100%;
-              display: flex;
-              align-items: center;
-              position: relative;
-              background-color: white;
-          }
-      #shop_name{
-          font-family: 'Inspiration', cursive;
-          font-size: 60px;
-          font-style: oblique;
-          font-display: 0%;
-          color:purple;
-          font-weight: bold;
-          
-      }
-      #shopname{
-          position: absolute;
-          left:3px;
-          font-weight: bold;
-          font-family: 'Inspiration', cursive;
-          font-size: 60px;
-          font-style: oblique;
-          font-display: 0%;
-          color:white;
-      }
-      .filter{
-        visibility: hidden;
-      }  
-      #search{
-          width: 20%;
-          text-align: center;
-      }
-      input{
-          display: none;
-      }
-      #search-icon{
-          width: 50px;
-          height: 50px;
-          outline:none;
-          border:none;
-          background-color: rgba(105, 47, 47, 0.03);
-          background-image:url(spriteimage.png);
-          background-position: -469px -306px; 
-          width: 24px;
-          height: 22px;
-          opacity:1;
-          transform: scale(1);
-      }
-      #cart{
-          width: 10%;
-          height:50px;
-          text-align: center;
-          background-image:url(carrt.png);
-          background-size: contain;
-          background-repeat: no-repeat;
-          transform: scale(0.7);
-          background-color: transparent;
-      
-      }
-      main{
-      }
-      
-      }
+    } 
+    .countResults{
+        position: absolute;
+        top:200px;
+        margin: auto;
+    }
+    #list{
+        position: absolute;
+        top:300px;
+        margin: 0 auto;
+    }
+    .icon{
+        visibility: visible;
+        width: 10%;
+        height: 30%;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    #menu_icon{
+        width: 18px;
+        height: 3px;
+        background-color:white;
+        position:absolute;
+        cursor: pointer;
+        left:20px;
+    }
     
+    #menu_icon::before{
+        content:"";
+        width:18px;
+        height: 3px;
+        background-color: white;
+        position: absolute;
+        top: -8px;
+    }
+        #menu_icon::after{
+            content:"";
+            width:18px;
+            height: 3px;
+            background-color: white;
+            position: absolute;
+            top: 8px;
+        }
+      .shop{
+        width: 70%;
+        height: 100px;
+        position: relative;
+        display: flex;
+        justify-content: start;
+      }  
+      #shop_name{
+        font-family: 'Inspiration', cursive;
+        font-size: 30px;
+        font-style: oblique;
+        font-display: 0%;
+        color:purple;
+        font-weight: bold;
+        
+    }
+    #shopname{
+        position: absolute;
+        left:3px;
+        font-weight: bold;
+        font-family: 'Inspiration', cursive;
+        font-size: 30px;
+        font-style: oblique;
+        font-display: 0%;
+        color:white;
+    }
+      #cart{
+        width: 20%;
+      }
+      #list{
+        width: 100%;
+        height: 200px;
+        padding: 20px;
+        display: grid;
+        column-gap: 1%;
+        grid-template-columns: 25% 25% 25% 25%;
+        row-gap:10px;
+    }
+      #list .item{
+        width: 100%;
+        height: 200px;
+        background-color: #fff5;
+        text-align:center;
+        border-radius: 10px;
+    
+    }
+      #list .item img{
+        width: 100%;
+        height: 100px;
+        object-fit:contain;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: transparent;
+    }
+    
+    #profile{
+        width: 11%;
+        height: 50px;
+        display: block;
+            background-image: url(profile.png);
+            transform: scale(0.68);
+            border-radius: 50%; 
+        }
+    
+        #menu_icon:hover, #profile:hover{
+        cursor:pointer;
+        opacity: 0.6;
+    }
+}
