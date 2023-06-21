@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 100px 1fr .25fr;
+}
+header{
+    box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.531);
+}
+.head-prop{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap:5px;
+
+    
+}
+.head-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border-left:2px solid rgba(0, 0, 0, 0.205);
+    border-right:2px solid rgba(0, 0, 0, 0.205);
+}
+#logo{
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 2px rgba(137, 43, 226, 0.485);
+}
+.head1{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.117);
+    box-shadow: 0px 0px 1px 0px rgba(128, 128, 128, 0.531);
+    display: flex;
+    justify-content: flex-end;
+    gap:20px;
+    background-color: aliceblue;
+}
+.h1{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.search{
+    background-position: -312px -192px; 
+    width: 22px;
+    height: 19px;
+    opacity:0.6;
+    transform: scale(1.2);
+    position: relative;
+    top:30%;
+    background-image: url(spriteimage.png);
+}
+.notify{
+    background-color: rgba(72, 11, 68, 0.572);
+    background-image: url(spriteimage.png);
+    background-position: -492px -419px; 
+    width: 26px;
+    height: 25px; 
+    position: relative;
+    top:25%; 
+}
+.profile{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba(187, 143, 228, 0.428);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.profile .tooltip{
+        visibility: hidden;    
+        width: 50px;
+        height: 20px;
+        position: absolute;
+        right:-40px;
+        z-index: 1;
+        background-color: rgba(187, 143, 228, 0.428);
+        border-radius: 5px;
+    }
+.profile:hover .tooltip{
+    visibility: visible;
+}
+.circle{
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;   
+    position: absolute;
+    top:30%;
+    background-color: violet;
+}
+.square{
+    background-color: rgba(137, 43, 226, 0.444);
+    width: 25px;
+    height: 15px;
+    position: absolute;
+    top:30px ;
+    border-radius: 50%;   
+}
+.head2 ul{
+     width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+}
+.head2 ul li{cursor: pointer;}
+main{
+    background-color: rgb(218, 232, 244);
+    display: grid;
+    grid-template-rows: 1.5fr 1fr;
+    gap:15px
+}
+.services_list{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 25px 1fr 25px;
+    gap:10px;
+    background-color: rgba(225, 65, 225, 0.144);
+    box-shadow: 0px 1px 0px 2px rgba(186, 156, 243, 0.684);
+}
+.services_list li{
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+}
+.box{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(228, 216, 240);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.icon{
+    width: 120px;
+    height: 100px;
+    background-color:white;
+    position: absolute;
+  
+}
+.box:hover{
+    cursor: pointer;
+    box-shadow: 2px 3px 0px 3px rgba(11, 5, 23, 0.181);
+}
+
+.other_services{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.other_services li{
+    list-style: none;
+    cursor: pointer; 
+    font-size: 15px;   
+
+}
+footer{
+    background-color: rgba(226, 154, 226, 0.581);
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+footer ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    height: 30%;
+    margin:20px auto;
+}
+footer ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
