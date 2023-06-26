@@ -1,13 +1,15 @@
 class Shape {
+    constructor(){}
     getArea(){
-        throw new Error("you cannot creat an abstract shape")
+        throw new Error("you cannot creat an abstract shape");
     }
     getTotalSides(){
-        throw new Error("you cannot creat an abstract shape")
+        throw new Error("you cannot creat an abstract shape");
     }
     getDimension(){
-        throw new Error("you cannot creat an abstract shape")
+        throw new Error("you cannot creat an abstract shape");
     }
+    
 }
 class Circle extends Shape {
     constructor(radius){
