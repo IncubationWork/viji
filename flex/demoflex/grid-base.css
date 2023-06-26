@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+.container{
+    border:5px solid black;
+    margin:20px;
+}
+.grid-item{
+    color:white;
+    font-size:18px;
+    padding:16px;
+    text-align:center;
+    font-weight: bold;
+}
+.box1{background-color: rgb(46, 197, 54);}
+.box2{background-color: rgb(2, 18, 32);}
+.box3{background-color: rgb(26, 113, 189);}
+.box4{background-color: rgb(19, 183, 156);}
+.box5{background-color: rgb(70, 29, 183);}
+.box6{background-color: rgb(21, 4, 42);}
+.box7{background-color: rgb(230, 47, 148);}
+.box8{background-color: rgb(20, 108, 10);}
+.box9{background-color: rgb(234, 33, 15);}

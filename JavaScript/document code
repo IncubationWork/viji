@@ -1,0 +1,89 @@
+Exercise 1: Change Background Color
+
+HTML:
+
+html
+Copy code
+<button id="changeColorButton">Change Color</button>
+JavaScript:
+
+javascript
+Copy code
+var changeColorButton = document.getElementById("changeColorButton");
+
+changeColorButton.addEventListener("click", function() {
+  var randomColor = generateRandomColor();
+  document.body.style.backgroundColor = randomColor;
+});
+
+function generateRandomColor() {
+  var letters = "0123456789ABCDEF";
+  var color = "#";
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+Explanation:
+
+We first select the button element with the id "changeColorButton" using getElementById.
+We add an event listener to the button, which listens for a "click" event.
+Inside the event listener, we call the generateRandomColor function to generate a random color.
+We then set the background color of the body element to the generated random color using document.body.style.backgroundColor.
+Exercise 2: Image Slider
+
+HTML:
+
+html
+Copy code
+<div id="slider">
+  <img src="image1.jpg" alt="Image 1" />
+  <img src="image2.jpg" alt="Image 2" />
+  <img src="image3.jpg" alt="Image 3" />
+</div>
+<button id="prevButton">Previous</button>
+<button id="nextButton">Next</button>
+JavaScript:
+
+javascript
+Copy code
+var slider = document.getElementById("slider");
+var prevButton = document.getElementById("prevButton");
+var nextButton = document.getElementById("nextButton");
+var currentIndex = 0;
+
+prevButton.addEventListener("click", function() {
+  if (currentIndex > 0) {
+    currentIndex--;
+  } else {
+    currentIndex = slider.children.length - 1;
+  }
+  showImage(currentIndex);
+});
+
+nextButton.addEventListener("click", function() {
+  if (currentIndex < slider.children.length - 1) {
+    currentIndex++;
+  } else {
+    currentIndex = 0;
+  }
+  showImage(currentIndex);
+});
+
+function showImage(index) {
+  for (var i = 0; i < slider.children.length; i++) {
+    slider.children[i].style.display = "none";
+  }
+  slider.children[index].style.display = "block";
+}
+Explanation:
+
+We select the slider container, previous button, and next button using getElementById.
+We set an initial index variable (currentIndex) to keep track of the currently displayed image.
+We add event listeners to the previous and next buttons to handle their click events.
+Inside the event listeners, we update the currentIndex based on the button clicked.
+We call the showImage function, passing the updated currentIndex, to display the corresponding image.
+The showImage function hides all images by setting their display CSS property to "none" and displays the image at the given index by setting its display CSS property to "block".
+Note: Make sure to replace "image1.jpg", "image2.jpg", "image3.jpg" with the actual paths to your images.
+
+These are just a couple of examples with explanations. The other exercises can be implemented in a similar manner. They involve manipulating the DOM elements, handling events, and implementing specific functionalities using JavaScript. Feel free to ask if you have any specific questions or need further clarification!

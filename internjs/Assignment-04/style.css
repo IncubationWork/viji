@@ -107,6 +107,7 @@
           display: grid;
           column-gap: 5px;
           grid-template-columns: 25% 25% 25% 25%;
+          grid-template-rows: 1fr;
           row-gap:10px;
       }
       #list .item img{
@@ -119,6 +120,8 @@
           background-color: transparent;
       }
       #list .item{
+        width: 100%;
+        height: 300px;
           background-color: #fff5;
           text-align:center;
           border-radius: 10px;
@@ -167,13 +170,11 @@
         position: absolute;
         top:200px;
         width: 80%;
-       
     }
     #list{
         width: 50%;
         position: absolute;
         top:300px;
-        
     }
     .icon{
         visibility: visible;

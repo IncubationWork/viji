@@ -1,0 +1,14 @@
+Exercise 1: Change Background Color
+Create a webpage with a button. When the button is clicked, change the background color of the webpage.
+
+Exercise 2: Image Slider
+Create an image slider using JavaScript. Display multiple images on a webpage and add previous and next buttons to navigate through the images.
+
+Exercise 3: Form Validation
+Create a form with input fields (e.g., name, email, password). Validate the form using JavaScript to ensure that all required fields are filled in and that the email address follows a valid format.
+
+Exercise 4: Calculator
+Create a calculator with HTML buttons and JavaScript logic to perform basic arithmetic operations (addition, subtraction, multiplication, division).
+
+Exercise 5: To-Do List
+Build a to-do list where users can add tasks, mark them as completed, and remove tasks from the list. Use JavaScript to handle the list operations.

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 1</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sum of Number</h1>
+        <h3>Input Number:
+            <span><input type="number" id="input"></span>
+        </h3>
+        <button id = "sum">Add</button>
+        <div id="result">Result: </div>
+    </div>
+    <script>
+        const userInput = document.getElementById("input");
+        const addInput = document.getElementById("sum");
+        const resultValue = document.getElementById("result");
+        let value = userInput.value;
+        let number = 0;
+
+        function getResult(value,number){
+           sum(value,number);}
+           console.log(getResult());
+        </script>
+</body>
+</html>
