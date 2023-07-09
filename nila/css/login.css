@@ -21,7 +21,7 @@ body{
     position: absolute;
     top:20%;
     right:10%;
-    width: 30%;
+    width: 550;
     height: 60%;
     background-color: transparent;
     color:white;
@@ -78,3 +78,14 @@ input{
     cursor: pointer;
     text-decoration: underline;
 }
+@media (max-width: 480px) {
+    #loginbox {
+      width: 80%;
+      right: 10%;
+    }
+  
+    input {
+      width: 100%;
+    }
+  }
+  

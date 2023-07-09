@@ -1,63 +1,36 @@
-class Accounts {
-    constructor(accountHolder, accountNumber, deposit, withdraw, balance){
-        this.accountHolder = "accountHolder";
-        this.accountNumber = "accountNumber";
-        this.deposit = 0;
-        this.withdraw = 0;
-        this.balance = 0;
+class Account {
+    constructor(accountNumber, cust_id, balance, deposit, withdraw) {
+      this.accountNumber = accountNumber;
+      this.cust_id = cust_id;
+      this.balance = balance;
+      this.withdraw = withdraw;
+      this.deposit = deposit;
     }
-    deposit(amount){
-        depositAmount += this.balance
-
-
+  }
+  
+  class AccountHolders extends Account {
+    constructor(accountNumber, cust_id, balance, deposit, withdraw, type, userId, password) {
+      super(accountNumber, cust_id, balance, deposit, withdraw);
+      this.type = type;
+      this.userId = userId;
+      this.password = password;
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Import Account class 
-import Account from './account.js';
-    
-   // create account holders
-class Holder extends Account {
-    constructor(accountNumber, accountHolder, balance, userId, password) {
-        super(accountNumber, accountHolder, balance);
-        this.userId = userId;
-        this.password = password;
-    }
-
-    verifyCredentials() {
-        const isValidCredentials = userCredentials.some(cred => cred.userId === this.userId && cred.password === this.password);
-
-        if (isValidCredentials) {
-            window.location.href = "index.html";
-            //return true;
-        } else {
-            alert("Please enter a valid userid and password");
-            //return false;
+  
+    verifyCredentials(userId, password) {
+      const accounts = [account1, account2, account3, account4];
+      for (const account of accounts) {
+        if (userId === account.userId && password === account.password) {
+          return true;
         }
+      }
+      return false;
     }
-}
+  }
+  
+  const account1 = new AccountHolders(123456789, 1111, 5000, 2000, 500, 'savings', 'tulip', 'tulip#1');
+  const account2 = new AccountHolders(234567891, 2222, 500, 1000, 500, 'savings', 'nila', 'nila#2');
+  const account3 = new AccountHolders(345678912, 3333, 1050, 12000, 5000, 'savings', 'ram', 'ram#3');
+  const account4 = new AccountHolders(456789123, 4444, 12000, 2000, 3000, 'savings', 'vedha', 'vedha#4');
 
-let account1 = new Holder(1111, 'Tulip', 5000, "tulip", "tulip#1");
-let account2 = new Holder(1112, 'Ram', 8700, "ram", "ram#2");
-let account3 = new Holder(1113, 'Nila', 800, "nila", "nila#3");
-let account4 = new Holder(1114, 'Vedha', 12000, "vedha", "vedha#4");
 
-account1.verifyCredentials(account1.userId, account1.password);
-account2.verifyCredentials(account2.userId, account2.password);
-account3.verifyCredentials(account3.userId, account3.password);
-account4.verifyCredentials(account4.userId, account4.password);
-
+  
