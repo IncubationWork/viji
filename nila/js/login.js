@@ -63,4 +63,26 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
   });
+     //crate userpass
+  const userPass = document.createElement('div');
+  userPass.id = 'userPass'
+  loginContainer.appendChild(userPass);
+
+
+      //create newuser
+  const newUser = document.createElement('div');
+  newUser.id = 'newUser';
+  newUser.textContent = 'New user'
+  document.getElementById('userPass').appendChild(newUser);
+
+      //create forgotpassword
+  const forgot = document.createElement('div');
+  forgot.id = 'pass';
+  forgot.textContent = 'Forgot password'
+  document.getElementById('userPass').appendChild(forgot);
+
+  newUser.addEventListener('click', function(){
+      window.location.href = "newuser.html";  
+
+  })
 });

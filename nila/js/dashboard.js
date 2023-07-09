@@ -1,17 +1,24 @@
-const accountHolders = [account1, account2, account3, account4];
-const profileName = document.querySelector('.profile');
+fetch('data.json')
+  .then(response => response.json())
+  .then(data => {
+    const accountHolders = data.accountHolders;
+    const loggedInUserId = "tulip"; // Replace with the actual logged-in user ID
+    const loggedInPassword = "tulip#1"; // Replace with the actual logged-in password
+    
+    for (const accountHolder of accountHolders) {
+      if (accountHolder.username === loggedInUserId && accountHolder.password === loggedInPassword) {
+        const user = document.createElement('div');
+        user.id = "userName";
+        user.innerHTML = `Welcome ${AccountHolders.name}`;
+        profileName.appendChild(user);
+        break; // Exit the loop once the logged-in user is found
+      }
+    }
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+  });
 
-const loggedInUserId = "tulip"; // Replace with the actual logged-in user ID
-
-for (const accountHolder of accountHolders) {
-  if (accountHolder.userId === loggedInUserId) {
-    const user = document.createElement('div');
-    user.id = "userName";
-    user.innerHTML = `Welcome ${accountHolder.userId}`;
-    profileName.appendChild(user);
-    break; // Exit the loop once the logged-in user is found
-  }
-}
     
     const viewBalance = document.querySelector(".balance span")
     const depositInput = document.getElementById('inputdep');
@@ -43,6 +50,7 @@ for (const accountHolder of accountHolders) {
         const totalValue = totalDeposit - totalWithdraw;
         totalAmount.textContent = totalValue.toFixed(2);
         return totalValue;
+        
     }
     function viewBalanceAmount(){
         viewBalance.innerHTML = calcTotal();
@@ -61,6 +69,6 @@ for (const accountHolder of accountHolders) {
         calcTotal();
         withdrawInput.value = "";
         viewBalanceAmount();
-
+        
     
     });

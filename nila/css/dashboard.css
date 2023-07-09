@@ -134,3 +134,49 @@ button{
     border-radius: 10px;
     background-color: white;
 }
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    #dashBoardContainer {
+      grid-template-columns: 1fr;
+    }
+  
+    nav {
+      flex-direction: row;
+      justify-content: space-evenly;
+      height: auto;
+      row-gap: 20px;
+    }
+    nav a:hover{
+        width: 20%;
+    }
+  
+    .row1 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .row2 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .row3 {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .amt,
+    .calc {
+      width: 80%;
+      margin: 20px auto;
+    }
+  
+    input {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  
