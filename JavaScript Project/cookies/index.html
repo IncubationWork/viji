@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Cookies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Frontend Forever</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae similique accusamus numquam possimus,
+    consequuntur aliquam suscipit corrupti! Accusantium soluta ducimus, commodi, laborum officiis officia 
+    libero pariatur, culpa quasi quos enim! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae 
+    similique accusamus numquam possimus,Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae similique
+    accusamus numquam possimus,consequuntur aliquam suscipit corrupti! Accusantium soluta ducimus, commodi, laborum 
+    officiis officia libero pariatur, culpa quasi quos enim! consequuntur aliquam suscipit corrupti! Accusantium
+    soluta ducimus, commodi,laborum officiis officia libero pariatur, culpa quasi quos enim!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae similique accusamus numquam possimus,
+    consequuntur aliquam suscipit corrupti! Accusantium soluta ducimus, commodi, laborum officiis officia 
+    libero pariatur, culpa quasi quos enim! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae 
+    similique accusamus numquam possimus,Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae similique
+    accusamus numquam possimus,consequuntur aliquam suscipit corrupti! Accusantium soluta ducimus, commodi, laborum 
+    officiis officia libero pariatur, culpa quasi quos enim! consequuntur aliquam suscipit corrupti! Accusantium
+    soluta ducimus, commodi,laborum officiis officia libero pariatur, culpa quasi quos enim!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae similique accusamus numquam possimus,
+    consequuntur aliquam suscipit corrupti! Accusantium soluta ducimus, commodi, laborum officiis officia 
+    libero pariatur, culpa quasi quos enim! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae 
+    similique accusamus numquam possimus,Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae similique
+    accusamus numquam possimus,consequuntur aliquam suscipit corrupti! Accusantium soluta ducimus, commodi, laborum 
+    officiis officia libero pariatur, culpa quasi quos enim! consequuntur aliquam suscipit corrupti! Accusantium
+    soluta ducimus, commodi,laborum officiis officia libero pariatur, culpa quasi quos enim!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae similique accusamus numquam possimus,
+    consequuntur aliquam suscipit corrupti! Accusantium soluta ducimus, commodi, laborum officiis officia 
+    libero pariatur, culpa quasi quos enim! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae 
+    similique accusamus numquam possimus,Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae similique
+    accusamus numquam possimus,consequuntur aliquam suscipit corrupti! Accusantium soluta ducimus, commodi, laborum 
+    officiis officia libero pariatur, culpa quasi quos enim! consequuntur aliquam suscipit corrupti! Accusantium
+    soluta ducimus, commodi,laborum officiis officia libero pariatur, culpa quasi quos enim!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae similique accusamus numquam possimus,
+    consequuntur aliquam suscipit corrupti! Accusantium soluta ducimus, commodi, laborum officiis officia 
+    libero pariatur, culpa quasi quos enim! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae 
+    similique accusamus numquam possimus,Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae similique
+    accusamus numquam possimus,consequuntur aliquam suscipit corrupti! Accusantium soluta ducimus, commodi, laborum 
+    officiis officia libero pariatur, culpa quasi quos enim! consequuntur aliquam suscipit corrupti! Accusantium
+    soluta ducimus, commodi,laborum officiis officia libero pariatur, culpa quasi quos enim!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae similique accusamus numquam possimus,
+    consequuntur aliquam suscipit corrupti! Accusantium soluta ducimus, commodi, laborum officiis officia 
+    libero pariatur, culpa quasi quos enim! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae 
+    similique accusamus numquam possimus,Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae similique
+    accusamus numquam possimus,consequuntur aliquam suscipit corrupti! Accusantium soluta ducimus, commodi, laborum 
+    officiis officia libero pariatur, culpa quasi quos enim! consequuntur aliquam suscipit corrupti! Accusantium
+    soluta ducimus, commodi,laborum officiis officia libero pariatur, culpa quasi quos enim!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae similique accusamus numquam possimus,
+    consequuntur aliquam suscipit corrupti! Accusantium soluta ducimus, commodi, laborum officiis officia 
+    libero pariatur, culpa quasi quos enim! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae 
+    similique accusamus numquam possimus,Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+</p>
+    
+    <div class="cookie">
+        <p>Terms Feed uses cookies to procive necessary website functionality, improve your experience and analyze our traffic.</p>
+        <button class="btn">Accept Cookies</button>
+    </div>
+    
+<script>
+    var cookie = document.querySelector('.cookie');
+    var button = document.querySelector('.btn');
+
+    button.addEventListener('click', () =>{
+        //console.log("hello")
+        cookie.classList.remove('active');
+        //localStorage.setItem("key","value");
+        localStorage.setItem("name","tulip");
+
+    });
+
+    setTimeout(() =>{ 
+        if(!localStorage.getItem("name")){
+        cookie.classList.add('active');
+        }
+    },2000);
+
+</script>
+</body>
+</html>

@@ -1,3 +1,8 @@
+const setAcceleration = document.getElementById("acc");
+const setBrake = document.getElementById("brake");
+const setDescription = document.getElementsByClassName("description");
+
+
 class Vehicles{
   constructor(id,type,brand,model){
     this.id = id;
@@ -9,7 +14,7 @@ class Vehicles{
   }
   setAcceleration(speedchange){
     this.speed += speedchange;
-    console.log(`${this.brand} ${this.model} ${this.type} accelerated to ${this.speed} km/h.`);
+    setDescription.innerHTML = (`${this.brand} ${this.model} ${this.type} accelerated to ${this.speed} km/h.`);
   }
   setBrake(speedchange){
     this.speed -=speedchange;
@@ -54,4 +59,3 @@ car.setDescription();
 bus.setAcceleration(60);
 bus.setBrake(15);
 bus.setDescription();
-

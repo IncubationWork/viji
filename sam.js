@@ -34,3 +34,4 @@ const aPrototype = Object.getPrototypeOf(a);
 const bPrototype = Object.getPrototypeOf(b);
  
 console.log(aPrototype.getVoiceType === bPrototype.getVoiceType);
+
