@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.layout{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+}
+.lay-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+    width: 200px;
+    text-align: center;
+    border:2px solid brown;
+    list-style: none;
+    font-size: 20px;
+}
+li:hover{
+    font-size: 25px;
+    cursor: pointer;
+    text-decoration-line:underline;
+}
